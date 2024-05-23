@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "I don't got games",
+  "version": "1.8",
+  "description": "Instead of entering a piracy site with extremly bad reputation, what about you go see your oldest friend, Rick Astley.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "*://*.igg-games.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
